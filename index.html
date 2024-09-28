@@ -47,7 +47,7 @@
         color: rgb(124, 124, 187);
         font-size: 1.1rem;
       }
-      
+
       .left {
         font-size: 2rem;
       }
@@ -76,7 +76,7 @@
         border-radius: 50%;
       }
 
-      .purple{
+      #element{
         color: rgb(251, 176, 36)
       }
     </style>
@@ -100,7 +100,7 @@
         <div class="leftSection">
           Hello, I'm a passionate
           <div>
-            <span class="purple">Front-End Software Developer</span>
+            <span id="element"></span>
         </div>
         </div>
 
@@ -109,5 +109,12 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Student....', 'Athlete.........', 'Front-End Software Developer............'],
+          typeSpeed: 50,
+        });
+      </script>
   </body>
 </html>
