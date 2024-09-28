@@ -20,51 +20,54 @@
       body {
         background-color: rgb(0, 0, 32);
         color: white;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
-      nav{
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 80px;
         background-color: rgb(18, 18, 62);
       }
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
       }
-      nav ul li{
+      nav ul li {
         list-style: none;
         margin: 0 23px;
       }
-      .left{
+      .left {
         font-size: 2rem;
       }
-      .firstSection{
+      .firstSection {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        padding: 50px, 20px;
         margin: 23px 0;
       }
-      .firstSection >div{
-        width: 40%
-      }
-      
-      .leftSection{
+
+      .leftSection {
         font-size: 2rem;
         align-items: center;
+        width: 40%;
       }
 
-      .rightSection{
-        width: 80%;
+      .rightSection {
+        width: 40%;
+        display: flex;
         float: right;
-        text-align: center;
       }
 
-      .portrait{
-        width: 10%;
-
+      .portrait {
+        width: 80%;
+        border-radius: 50%;
       }
 
+      .purple{
+        color: rgb(251, 176, 36)
+      }
     </style>
   </head>
   <body>
@@ -73,30 +76,27 @@
         <div class="left">Shivendra Bhagat</div>
         <div class="right"></div>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact Me </li>
-        </ul>
-      </nav>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact Me</a></li>
+        
+      </nav> 
     </header>
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hello, I'm a passinate
-                <div>
-                  Front-end Software Developer
-                </div>
-            </div>
-            
-            <div class="rightSection">
-             <img src="Portrait.png" alt="Portrait Picture" class="portrait">
+      <section class="firstSection">
+        <div class="leftSection">
+          Hello, I'm a passionate
+          <div>
+            <span class="purple">Front-End Software Developer</span>
+        </div>
+        </div>
 
-            </div>
-            
-
-        </section>
+        <div class="rightSection">
+          <img src="Portrait.png" alt="Portrait Picture" class="portrait" />
+        </div>
+      </section>
     </main>
   </body>
 </html>
