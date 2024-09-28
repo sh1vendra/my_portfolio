@@ -26,7 +26,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 100px;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
       }
       nav ul{
         display: flex;
@@ -36,12 +37,40 @@
         list-style: none;
         margin: 0 23px;
       }
+      .left{
+        font-size: 2rem;
+      }
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+      }
+      .firstSection >div{
+        width: 40%
+      }
+      
+      .leftSection{
+        font-size: 2rem;
+        align-items: center;
+      }
+
+      .rightSection{
+        width: 80%;
+        float: right;
+        text-align: center;
+      }
+
+      .portrait{
+        width: 10%;
+
+      }
+
     </style>
   </head>
   <body>
     <header>
       <nav>
-        <div class="left">Shivendra's Portfolio</div>
+        <div class="left">Shivendra Bhagat</div>
         <div class="right"></div>
         <ul>
             <li>Home</li>
@@ -52,5 +81,22 @@
         </ul>
       </nav>
     </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, I'm a passinate
+                <div>
+                  Front-end Software Developer
+                </div>
+            </div>
+            
+            <div class="rightSection">
+             <img src="Portrait.png" alt="Portrait Picture" class="portrait">
+
+            </div>
+            
+
+        </section>
+    </main>
   </body>
 </html>
