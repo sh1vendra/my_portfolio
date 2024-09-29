@@ -44,8 +44,8 @@
       }
 
       nav ul li a:hover{
-        color: rgb(28, 28, 30);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
       }
 
       main hr{
@@ -55,9 +55,18 @@
         margin: 40px 80px;
       }
 
-      .left {
+      .left a {
         font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
       }
+
+      .left a:hover{
+        font-size: 2.1rem;
+        transition: all 0.3s ease;
+      }
+
       .firstSection {
         display: flex;
         justify-content: space-around;
@@ -90,6 +99,7 @@
       .secondSection{
         margin: auto;
         max-width: 80vw;
+        height: 80vh;
       }
 
     </style>
@@ -97,7 +107,9 @@
   <body>
     <header>
       <nav>
-        <div class="left">Shivendra Bhagat</div>
+        <div class="left">
+            <a href="https://www.shivendrabhagat.com" target="_blank">Shivendra Bhagat</a>
+          </div>
         <div class="right"></div>
         <ul>
           <li><a href="">Home</a></li>
