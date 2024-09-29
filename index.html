@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shivendra - Developer Portfolio</title>
+    <title>Shivendra-Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,104 +12,14 @@
       1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      body {
-        background-color: rgb(0, 0, 32);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(18, 18, 62);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-
-      nav ul li a{
-        color: white;
-        text-decoration: none;
-      }
-
-      nav ul li a:hover{
-        font-size: 1.2rem;
-        transition: all 0.3s ease;
-      }
-
-      main hr{
-        border: 0;
-        background: rgb(251, 176, 36);
-        height: 3px;
-        margin: 40px 80px;
-      }
-
-      .left a {
-        font-size: 2rem;
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-      }
-
-      .left a:hover{
-        font-size: 2.1rem;
-        transition: all 0.3s ease;
-      }
-
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 50px, 20px;
-        margin: 140px 0;
-      }
-
-      .leftSection {
-        font-size: 2rem;
-        align-items: center;
-        width: 40%;
-      }
-
-      .rightSection {
-        width: 40%;
-        display: flex;
-        float: right;
-      }
-
-      .portrait {
-        width: 80%;
-        border-radius: 50%;
-      }
-
-      #element{
-        color: rgb(251, 176, 36)
-      }
-
-      .secondSection{
-        margin: auto;
-        max-width: 80vw;
-        height: 80vh;
-      }
-
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="left">
-            <a href="https://www.shivendrabhagat.com" target="_blank">Shivendra Bhagat</a>
-          </div>
+          <a href="https://www.shivendrabhagat.com" target="_blank">Shivendra Bhagat</a>
+        </div>
         <div class="right"></div>
         <ul>
           <li><a href="">Home</a></li>
@@ -117,8 +27,8 @@
           <li><a href="">Services</a></li>
           <li><a href="">Projects</a></li>
           <li><a href="">Contact Me</a></li>
-        
-      </nav> 
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="firstSection">
@@ -126,24 +36,24 @@
           Hello, I'm a passionate
           <div>
             <span id="element"></span>
-        </div>
+          </div>
         </div>
 
         <div class="rightSection">
           <img src="Portrait.png" alt="Portrait Picture" class="portrait" />
         </div>
       </section>
-      <hr>
+      <hr />
       <section class="secondSection">
         <h1>Experience</h1>
-    </section>
+      </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-          strings: ['Student....', 'Athlete.........', 'Front-End Software Developer............'],
-          typeSpeed: 50,
-        });
-      </script>
+      var typed = new Typed('#element', {
+        strings: ['Student....', 'Athlete.........', 'Front-End Software Developer............'],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
