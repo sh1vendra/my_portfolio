@@ -84,7 +84,7 @@
   .secondSection {
     margin: auto;
     max-width: 80vw;
-    height: 80vh;
+    height: 100vh;
     padding: 20px;
     text-align: center;
   }
@@ -92,8 +92,9 @@
   .secondSection h1{
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
     margin-bottom: 70px;
-    
+    text-transform: uppercase;
   }
   
   .about-text {
