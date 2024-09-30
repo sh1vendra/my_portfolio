@@ -16,7 +16,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgb(18, 18, 62);
+  background-color: rgb(26, 26, 92);
 }
 
 nav ul {
@@ -146,4 +146,11 @@ main hr {
 .skill-item p {
   font-size: 15px;
   font-weight: 500;
+}
+
+.footer {
+  background-color: rgb(26, 26, 92);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
