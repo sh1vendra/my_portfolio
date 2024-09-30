@@ -106,3 +106,40 @@
     padding: 40px;
     border-radius: 40px;
   }
+
+  .skillsSection {
+    max-width: 80vw;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+  }
+  
+
+  .skillsSection h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 20px;
+    border: 2px solid white;   
+    padding: 40px;
+    border-radius: 40px;
+    overflow-x: auto; 
+  }
+  
+  .skill-logo {
+    font-size: 70px;
+  }
+  
+  .skill-item p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
