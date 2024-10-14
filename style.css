@@ -7,6 +7,7 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
 }
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -49,7 +50,7 @@ main hr {
   font-size: 1.8rem;
   text-decoration: none;
   font-weight: bold;
-  font-family:sans-serif;
+  font-family: sans-serif;
   color: white;
 }
 
@@ -87,9 +88,10 @@ main hr {
 .secondSection {
   margin: auto;
   max-width: 80vw;
-  height: 100vh;
+  height: auto;
   padding: 20px;
   text-align: center;
+  margin-bottom: 40vh;
 }
 
 .secondSection h1 {
@@ -105,14 +107,16 @@ main hr {
   margin-right: 20px;
   font-size: 18px;
   line-height: 2;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
   border: 2px solid white;
   padding: 40px;
   border-radius: 40px;
 }
 
 .skillsSection {
-  max-width: 80vw;
-  height: 100vh;
+  max-width: 100vw;
+  height: auto;
   padding: 20px;
   text-align: center;
   margin: auto;
@@ -134,6 +138,8 @@ main hr {
   padding: 40px;
   border-radius: 40px;
   overflow-x: auto;
+  flex-wrap: wrap;
+  margin-bottom: 20rem;
 }
 
 .skill-logo {
@@ -150,4 +156,52 @@ main hr {
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  .left a {
+    font-size: 1.2rem;
+  }
+
+.left a:hover {
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+  .leftSection {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .rightSection {
+    width: 60%;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+
+  .secondSection, .skillsSection {
+    max-width: 95vw;
+    padding: 10px;
+  }
+
+  .about-text, .skills-container {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .skill-logo {
+    font-size: 50px;
+  }
+
+  .skill-item p {
+    font-size: 14px;
+  }
 }
