@@ -1,12 +1,11 @@
 # Shivendra Bhagat - Portfolio
 
-This is the personal portfolio website of **Shivendra Bhagat**.
+This is the personal portfolio website.
 
 ## Tech Stack
 
 - **HTML5**: For structuring the content.
 - **CSS3**: For styling and layout.
-- **JavaScript**: For interactivity and dynamic content.
 
 ## Features
 - **Responsive Design**: Works on both desktop and mobile.
