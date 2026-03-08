@@ -56,50 +56,41 @@ export default function Hero() {
           >
             <motion.p
               variants={item}
-              className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 dark:text-white/35 mb-3"
+              className="text-sm font-semibold tracking-[0.2em] uppercase text-gray-400 dark:text-white/35 mb-3"
             >
               Hello, I'm
             </motion.p>
 
-            <motion.h1 variants={item} className="font-extrabold leading-[1.05] mb-4">
-              <span className="text-5xl md:text-6xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-white dark:to-gold-400 bg-clip-text text-transparent">
+            <motion.h1 variants={item} className="font-extrabold leading-[1.05] mb-5">
+              <span className="text-6xl md:text-7xl lg:text-8xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-white dark:to-gold-400 bg-clip-text text-transparent">
                 Shivendra
               </span>
               <br />
-              <span className="text-5xl md:text-6xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-white dark:to-gold-400 bg-clip-text text-transparent">
+              <span className="text-6xl md:text-7xl lg:text-8xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-white dark:to-gold-400 bg-clip-text text-transparent">
                 Bhagat
               </span>
             </motion.h1>
 
             <motion.div
               variants={item}
-              className="text-lg md:text-xl font-semibold text-gold-600 dark:text-gold-500 mb-5 min-h-[1.8em]"
+              className="text-xl md:text-2xl font-bold text-gold-600 dark:text-gold-500 mb-6 min-h-[1.8em]"
             >
               <span ref={typedRef} />
             </motion.div>
 
-            <motion.p variants={item} className="text-sm text-gray-500 dark:text-white/45 mb-1.5">
+            <motion.p variants={item} className="text-base text-gray-500 dark:text-white/45 mb-1.5">
               B.S. Computer Science &nbsp;&middot;&nbsp; Minor: Applied Mathematics
             </motion.p>
-            <motion.p variants={item} className="text-sm font-semibold text-gray-700 dark:text-white/75 mb-2">
+            <motion.p variants={item} className="text-base font-semibold text-gray-700 dark:text-white/75 mb-3">
               GPA: 3.92
             </motion.p>
 
             <motion.p
               variants={item}
-              className="text-sm italic text-gray-400 dark:text-white/30 mb-9"
+              className="text-base italic text-gray-400 dark:text-white/30"
             >
               Building software that solves real problems.
             </motion.p>
-
-            <motion.div variants={item} className="flex gap-3 flex-wrap">
-              <a href="#projects" className="btn-primary">
-                View My Projects
-              </a>
-              <a href="#skills" className="btn-outline">
-                View My Skills
-              </a>
-            </motion.div>
           </motion.div>
 
           {/* Portrait */}
