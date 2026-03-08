@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans antialiased;
+  }
+  ::selection {
+    background-color: rgba(245, 166, 35, 0.25);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-black font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-gold-500/25 text-sm;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-gold-500/50 hover:border-gold-500 text-gold-500 hover:bg-gold-500/10 font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 text-sm;
+  }
+  .card {
+    @apply bg-white dark:bg-white/[0.03] border border-black/[0.06] dark:border-white/[0.07] rounded-2xl;
+  }
+  .section-container {
+    @apply max-w-5xl mx-auto px-6;
+  }
+}
+
+/* Dot grid background for hero */
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.dot-grid-light {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
