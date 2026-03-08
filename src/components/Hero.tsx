@@ -46,13 +46,13 @@ export default function Hero() {
       <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gold-500/5 dark:bg-gold-500/8 blur-3xl pointer-events-none" />
 
       <div className="section-container w-full relative z-10 pt-24 pb-20">
-        <div className="flex items-center justify-between gap-16">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-16">
           {/* Text */}
           <motion.div
             variants={container}
             initial="hidden"
             animate="show"
-            className="flex-1 max-w-xl"
+            className="flex-1 max-w-xl text-center md:text-left"
           >
             <motion.p
               variants={item}
@@ -98,7 +98,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-            className="hidden md:block flex-shrink-0"
+            className="flex-shrink-0"
           >
             <div className="relative">
               {/* Glow ring */}
@@ -108,7 +108,7 @@ export default function Hero() {
               <img
                 src="/assets/headshot.jpg"
                 alt="Shivendra Bhagat"
-                className="w-64 h-64 lg:w-72 lg:h-72 rounded-full object-cover object-top border-2 border-gold-500/50 relative shadow-2xl shadow-black/30"
+                className="w-40 h-40 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover object-top border-2 border-gold-500/50 relative shadow-2xl shadow-black/30"
               />
             </div>
           </motion.div>
