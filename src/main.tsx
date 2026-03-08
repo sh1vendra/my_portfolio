@@ -5,10 +5,10 @@ import App from './App.tsx'
 
 // Apply saved theme before render to prevent flash
 const savedTheme = localStorage.getItem('theme')
-if (savedTheme === 'light') {
-  document.documentElement.classList.remove('dark')
-} else {
+if (savedTheme === 'dark') {
   document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
 }
 
 createRoot(document.getElementById('root')!).render(
