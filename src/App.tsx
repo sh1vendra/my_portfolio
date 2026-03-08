@@ -40,9 +40,9 @@ export default function App() {
       <main id="main-content">
         <Hero />
         <About />
+        <Experience />
         <Projects />
         <Skills />
-        <Experience />
         <Contact />
       </main>
       <Footer />
