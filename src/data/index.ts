@@ -143,6 +143,7 @@ export const about = {
     "President's List Recognition",
     "Dean's List Recognition",
     'Texas State Achievement Scholarship',
+    'Best Student Employee Award',
   ],
   involvement: [
     'IEEE TXST',
