@@ -3,152 +3,370 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shivendra-Portfolio</title>
+    <title>Shivendra Bhagat | Portfolio</title>
+    <meta name="description" content="Shivendra Bhagat — Full-Stack Developer, Computer Science student at Texas State University. Portfolio showcasing projects, skills, and experience." />
+    <meta name="author" content="Shivendra Bhagat" />
+    <meta name="keywords" content="Shivendra Bhagat, software developer, portfolio, full-stack, computer science, Texas State University" />
+    <meta property="og:title" content="Shivendra Bhagat | Portfolio" />
+    <meta property="og:description" content="Full-Stack Developer & Computer Science student at Texas State University." />
+    <meta property="og:url" content="https://shivendrabhagat.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://shivendrabhagat.com/assets/headshot.jpg" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231a1a5c' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' font-family='sans-serif' font-weight='bold' fill='%23fbb024' text-anchor='middle'>SB</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;
-      0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;
-      1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="left">
-          <a href="https://shivendrabhagat.com"
-            >Shivendra Bhagat</a
-          >
-        </div>
-        <div class="right"></div>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/shivendrabhagat/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://github.com/sh1vendra" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          </li>
-          <li>
-            <a href="mailto:shivendra@txstate.edu"><i class="fas fa-envelope"></i> Email</a>
-          </li>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="#hero" class="nav__brand">Shivendra Bhagat</a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#hero" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
       </nav>
     </header>
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hello, I'm a passionate
-          <div>
-            <span id="element"></span>
-          </div>
-        </div>
 
-        <div class="rightSection">
-          <img src="Portrait.png" alt="Portrait Picture" class="portrait" />
-        </div>
-      </section>
-      <hr />
-      <section class="secondSection" id="about">
-        <h1>About Me</h1>
-        <div class="about-container">
-          <div class="about-text">
-            <p>
-              Currently pursuing a Bachelor of Science in Computer Science at
-              Texas State University with a strong passion for Software Engineering, 
-              I'm always pushing myself beyond my limits, working on projects 
-              to sharpen my skills and take on new challenges ensuring my 
-              consistent growth and professional advancement.
-            </p>
-            <p>
-              I have a solid foundation in Data Structures & Algorithms (DSA), and 
-              Object-Oriented Programming (OOP), which allows me to design and implement robust programs 
-              and optimize the performance of the applications I develop. I believe in writing clean, efficient code and am always looking
-              for ways to improve my skills and problem-solving ability. When I'm not on my laptop, you can find me
-              on the field playing soccer, lifting weights or swimming, pushing
-              my limits and striving for excellence in everything I do.
-            </p>
-            <p>
-              <br /><br />
-              "Debugging: where the real coding happens"
-            </p>
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero section" id="hero">
+        <div class="hero__content container">
+          <div class="hero__text">
+            <p class="hero__greeting">Hello, I'm</p>
+            <h1 class="hero__name">Shivendra Bhagat</h1>
+            <div class="hero__role">
+              <span id="typed-element"></span>
+            </div>
+            <p class="hero__intro">B.S. Computer Science, Minor: Applied Mathematics &mdash; <strong>GPA: 3.92</strong></p>
+            <p class="hero__tagline">Building software that solves real problems.</p>
+            <div class="hero__cta">
+              <a href="#projects" class="btn btn--primary">View My Projects</a>
+              <a href="#skills" class="btn btn--outline">View My Skills</a>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img src="assets/headshot.jpg" alt="Shivendra Bhagat portrait" class="hero__portrait" />
           </div>
         </div>
       </section>
-      <section class="skillsSection" id="skills">
-        <h1>Skills</h1>
-        <div class="skills-container">
-          <div class="skill-item">
-            <i class="fab fa-html5 skill-logo"></i>
-            <p>HTML5</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-css3-alt skill-logo"></i>
-            <p>CSS3</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js skill-logo"></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-react skill-logo"></i>
-            <p>React</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-node-js skill-logo"></i>
-            <p>Node.js</p>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-cplusplus-plain skill-logo"></i>
-            <p>C++</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-python skill-logo"></i>
-            <p>Python</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-git-alt skill-logo"></i>
-            <p>Git</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-bootstrap skill-logo"></i>
-            <p>Bootstrap</p>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-linux skill-logo"></i>
-            <p>Linux</p>
-          </div>
-          <div class="skill-item">
-            <i class="devicon-vscode-plain skill-logo"></i>
-            <p>VSCode</p>
-          </div>
-      </section>
-      <footer class="footer">
-            <p>&copy; 2025 Shivendra Bhagat. All Rights Reserved.</p>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="section__title animate-on-scroll">About Me</h2>
+          <div class="about__grid">
+            <div class="about__card animate-on-scroll">
+              <h3><i class="fas fa-book"></i> Relevant Coursework</h3>
+              <div class="about__pills">
+                <span class="pill">Data Structures & Algorithms in C++</span>
+                <span class="pill">Object-Oriented Programming in Java</span>
+                <span class="pill">Software Engineering in JavaScript</span>
+                <span class="pill">Computing Systems Fundamentals</span>
+                <span class="pill">Internet Software Development (MERN)</span>
+              </div>
+            </div>
+            <div class="about__card animate-on-scroll">
+              <h3><i class="fas fa-trophy"></i> Achievements</h3>
+              <div class="about__pills">
+                <span class="pill">President's List Recognition</span>
+                <span class="pill">Dean's List Recognition</span>
+                <span class="pill">Texas State Achievement Scholarship</span>
+              </div>
+            </div>
+            <div class="about__card animate-on-scroll">
+              <h3><i class="fas fa-users"></i> Involvement</h3>
+              <div class="about__pills">
+                <span class="pill">IEEE TXST</span>
+                <span class="pill">ACM AI</span>
+                <span class="pill">Alpha Lambda Delta Honor Society</span>
+                <span class="pill">Bobcat Build Student Organization</span>
+                <span class="pill">Google Developers Group</span>
+                <span class="pill">Technical Interview Prep at TXST</span>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <h2 class="section__title animate-on-scroll">Projects</h2>
+          <div class="projects__grid">
+
+            <article class="project-card animate-on-scroll">
+              <div class="project-card__browser">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__bar"></div>
+              </div>
+              <div class="project-card__image">
+                <img src="assets/projects/sortify.png" alt="Sortify application dashboard" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3>Sortify</h3>
+                <p>AI-powered document organization and retrieval platform. Automatically categorizes academic files and enables semantic search through a RAG pipeline with an AI chat assistant.</p>
+                <div class="project-card__tags">
+                  <span>React</span><span>TypeScript</span><span>Vite</span><span>TailwindCSS</span><span>FastAPI</span><span>PostgreSQL</span><span>PGVector</span><span>Sentence Transformers</span>
+                </div>
+                <a href="https://github.com/sh1vendra/Sortify" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+              <div class="project-card__browser">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__bar"></div>
+              </div>
+              <div class="project-card__image">
+                <img src="assets/projects/tictactoe.png" alt="Arcade Tic-Tac-Toe game interface" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3>Arcade Tic-Tac-Toe</h3>
+                <p>Commercial-grade Tic-Tac-Toe with retro neon arcade aesthetic. Features 3 difficulty levels including an unbeatable Minimax AI, retro 8-bit sound effects, and neon particle animations.</p>
+                <div class="project-card__tags">
+                  <span>React 19</span><span>Vite</span><span>Tailwind CSS</span><span>Minimax</span><span>Web Audio API</span><span>Canvas</span><span>Firebase</span>
+                </div>
+                <a href="https://github.com/sh1vendra/Tic_Tac_Toe" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+              <div class="project-card__browser">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__bar"></div>
+              </div>
+              <div class="project-card__image">
+                <img src="assets/projects/weather.png" alt="Weather App showing forecast" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3>Weather App</h3>
+                <p>Real-time weather application with 5-day forecast, geolocation detection, detailed metrics, and dynamic backgrounds matching current weather conditions.</p>
+                <div class="project-card__tags">
+                  <span>React 18</span><span>TypeScript</span><span>OpenWeatherMap API</span><span>CSS Animations</span><span>Vercel</span>
+                </div>
+                <a href="https://github.com/sh1vendra/Weather_App" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+              <div class="project-card__browser">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__bar"></div>
+              </div>
+              <div class="project-card__image">
+                <img src="assets/projects/spaceinvaders.png" alt="Space Invaders gameplay" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3>Space Invaders</h3>
+                <p>Modern Java implementation of the classic Space Invaders arcade game with customizable graphics, dynamic music system, character selection, and progressive difficulty.</p>
+                <div class="project-card__tags">
+                  <span>Java SE</span><span>Swing</span><span>AWT</span><span>Java Sound API</span>
+                </div>
+                <a href="https://github.com/sh1vendra/Space_Invaders" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+              <div class="project-card__browser">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__bar"></div>
+              </div>
+              <div class="project-card__image">
+                <img src="assets/projects/bmi.png" alt="BMI Calculator application" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3>BMI Calculator</h3>
+                <p>Modern, interactive BMI Calculator with real-time computation, metric/imperial units, health scale visualization, weight range estimates, and progress tracking.</p>
+                <div class="project-card__tags">
+                  <span>React</span><span>TypeScript</span>
+                </div>
+                <a href="https://github.com/sh1vendra/BMI_Calculator" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <h2 class="section__title animate-on-scroll">Skills</h2>
+          <div class="skills__grid">
+
+            <div class="skills__category animate-on-scroll">
+              <h3>Languages</h3>
+              <div class="skills__pills">
+                <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill-pill"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                <span class="skill-pill"><i class="fab fa-java"></i> Java</span>
+                <span class="skill-pill"><i class="devicon-cplusplus-plain"></i> C++</span>
+                <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+              </div>
+            </div>
+
+            <div class="skills__category animate-on-scroll">
+              <h3>Frontend</h3>
+              <div class="skills__pills">
+                <span class="skill-pill"><i class="fab fa-react"></i> React</span>
+                <span class="skill-pill"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="skill-pill"><i class="devicon-tailwindcss-original"></i> Tailwind CSS</span>
+                <span class="skill-pill"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+              </div>
+            </div>
+
+            <div class="skills__category animate-on-scroll">
+              <h3>Backend</h3>
+              <div class="skills__pills">
+                <span class="skill-pill"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="skill-pill"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+                <span class="skill-pill"><i class="devicon-express-original"></i> Express.js</span>
+              </div>
+            </div>
+
+            <div class="skills__category animate-on-scroll">
+              <h3>Databases</h3>
+              <div class="skills__pills">
+                <span class="skill-pill"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                <span class="skill-pill"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                <span class="skill-pill"><i class="devicon-supabase-plain"></i> Supabase</span>
+              </div>
+            </div>
+
+            <div class="skills__category animate-on-scroll">
+              <h3>Tools & Platforms</h3>
+              <div class="skills__pills">
+                <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="skill-pill"><i class="fab fa-github"></i> GitHub</span>
+                <span class="skill-pill"><i class="fab fa-linux"></i> Linux</span>
+                <span class="skill-pill"><i class="devicon-vscode-plain"></i> VS Code</span>
+                <span class="skill-pill"><i class="fab fa-docker"></i> Docker</span>
+                <span class="skill-pill"><i class="devicon-vitejs-plain"></i> Vite</span>
+                <span class="skill-pill"><i class="devicon-firebase-plain"></i> Firebase</span>
+                <span class="skill-pill"><i class="devicon-vercel-original"></i> Vercel</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="experience section" id="experience">
+        <div class="container">
+          <h2 class="section__title animate-on-scroll">Experience</h2>
+          <div class="timeline">
+
+            <div class="timeline__item animate-on-scroll">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Computer Science Researcher</h3>
+                <p class="timeline__meta">Texas State University &middot; June 2024 &ndash; September 2024</p>
+                <ul>
+                  <li>Conducted a comparative analysis report on AI models through literature and hands-on testing, evaluating their strengths, limitations, and task-specific performance, resulting in optimal selection of models for 15 departments</li>
+                  <li>Presented the findings to the board of Vice-President for IT, delivering technical analysis in a simple understandable format, directly influencing 120+ employee members of the university</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item animate-on-scroll">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Software Engineer Intern</h3>
+                <p class="timeline__meta">Orgware Construct Software Development &middot; April 2023 &ndash; July 2023</p>
+                <ul>
+                  <li>Built promotional and discount system features using React.js and Node.js with Express framework, implementing pricing logic and user interface components that contributed to a 20% increase in subscriptions</li>
+                  <li>Architected RESTful APIs to handle user authentication and data validation, integrating with Firebase Authentication services, successfully delivering secure login/logout functionality that supported 1,000+ users</li>
+                  <li>Designed and managed MySQL databases with 5+ tables, writing optimized SQL queries to efficiently fetch user data and support promotional features</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item animate-on-scroll">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Software Engineer Intern</h3>
+                <p class="timeline__meta">Global Hub Education Network &middot; January 2023 &ndash; March 2023</p>
+                <ul>
+                  <li>Contributed to the development of web application features using React.js under senior developer mentorship</li>
+                  <li>Updated and maintained the company testimonials section by implementing a dynamic React component to display customer reviews, adding 3 new testimonials with responsive card layouts and hover animations</li>
+                  <li>Gained hands-on experience with the software development life cycle, contributing across design and testing</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="section__title animate-on-scroll">Get in Touch</h2>
+          <p class="contact__subtitle animate-on-scroll">Feel free to reach out for collaborations or opportunities.</p>
+          <div class="contact__links animate-on-scroll">
+            <a href="https://www.linkedin.com/in/shivendrabhagat/" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/sh1vendra" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:shivendra@txstate.edu" class="contact__link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Shivendra Bhagat. All Rights Reserved.</p>
+      </div>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Student....",
-          "Athlete.........",
-          "Software Developer............",
-        ],
-        typeSpeed: 50,
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
