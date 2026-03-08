@@ -52,7 +52,8 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center gap-6">
         <a
           href="#hero"
-          className="font-bold text-base text-gray-900 dark:text-white mr-auto tracking-tight hover:text-gold-600 dark:hover:text-gold-500 transition-colors"
+          className="font-extrabold text-xl text-gray-900 dark:text-white mr-auto hover:text-gold-600 dark:hover:text-gold-500 transition-colors"
+          style={{ fontFamily: "'Dancing Script', 'Brush Script MT', cursive" }}
         >
           Shivendra Bhagat
         </a>
