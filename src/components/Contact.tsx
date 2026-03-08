@@ -19,6 +19,12 @@ const links = [
     href: 'mailto:shivendra@txstate.edu',
     color: 'hover:text-gold-600 dark:hover:text-gold-500',
   },
+  {
+    label: 'X',
+    icon: 'fab fa-x-twitter',
+    href: 'https://x.com/Shiv_endra_007',
+    color: 'hover:text-gray-900 dark:hover:text-white',
+  },
 ]
 
 export default function Contact() {
