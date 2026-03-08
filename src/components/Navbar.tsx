@@ -8,9 +8,9 @@ interface NavbarProps {
 const links = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -52,7 +52,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center gap-6">
         <a
           href="#hero"
-          className="font-extrabold text-xl text-gray-900 dark:text-white mr-auto hover:text-gold-600 dark:hover:text-gold-500 transition-colors"
+          className="font-extrabold text-4xl text-gray-900 dark:text-white mr-auto hover:text-gold-600 dark:hover:text-gold-500 transition-colors"
           style={{ fontFamily: "'Dancing Script', 'Brush Script MT', cursive" }}
         >
           Shivendra Bhagat
