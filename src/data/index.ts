@@ -1,6 +1,6 @@
 export const projects = [
   {
-    name: 'Sortify',
+    name: 'Sortify for Students',
     description:
       'AI-powered document organization and retrieval platform. Automatically categorizes academic files and enables semantic search through a RAG pipeline with an AI chat assistant.',
     tags: ['React', 'TypeScript', 'Vite', 'TailwindCSS', 'FastAPI', 'PostgreSQL', 'PGVector', 'Sentence Transformers'],
@@ -9,7 +9,16 @@ export const projects = [
     alt: 'Sortify application dashboard',
   },
   {
-    name: 'Arcade Tic-Tac-Toe',
+    name: 'TelcoGuard - Fraud Detection Platform',
+    description:
+      'Engineered fraud detection engine flagging suspicious porting requests across 3 vectors, cutting manual review by ~80%. Built telecom number management platform with role-based access, automated porting workflows, and audit logging. Implemented 15+ REST endpoints with JWT authentication, OpenAPI docs, dockerized and deployed to Render + Vercel.',
+    tags: ['React', 'Node.js', 'MongoDB', 'JWT', 'Git'],
+    github: 'https://github.com/sh1vendra/TelcoGuard',
+    screenshot: '/assets/projects/TelcoGuard.png',
+    alt: 'TelcoGuard fraud detection platform',
+  },
+  {
+    name: 'The Grid - Arcade Tic-Tac-Toe',
     description:
       'Commercial-grade Tic-Tac-Toe with retro neon arcade aesthetic. Features 3 difficulty levels including an unbeatable Minimax AI, 8-bit sound effects via Web Audio API, and neon particle animations.',
     tags: ['React 19', 'Vite', 'Tailwind CSS', 'Minimax', 'Web Audio API', 'Canvas', 'Firebase'],
@@ -27,7 +36,7 @@ export const projects = [
     alt: 'Weather App showing forecast',
   },
   {
-    name: 'Space Invaders',
+    name: 'Space Invaders - Save the World',
     description:
       'Modern Java implementation of the classic Space Invaders arcade game with customizable graphics, dynamic music system, character/enemy selection, and progressive difficulty scaling.',
     tags: ['Java SE', 'Swing', 'AWT', 'Java Sound API'],
@@ -36,7 +45,7 @@ export const projects = [
     alt: 'Space Invaders gameplay',
   },
   {
-    name: 'BMI Calculator',
+    name: 'Soma - Physique Analyzer',
     description:
       'Modern, interactive BMI Calculator with real-time computation, metric/imperial units, health scale visualization, healthy weight range estimates, and recent results tracking with a mini chart.',
     tags: ['React', 'TypeScript'],
@@ -95,38 +104,41 @@ export const skills = [
       { label: 'Vite', icon: 'devicon-vitejs-plain' },
       { label: 'Firebase', icon: 'devicon-firebase-plain' },
       { label: 'Vercel', icon: 'devicon-vercel-original' },
+      { label: 'AWS', icon: 'fab fa-aws' },
+      { label: 'Claude AI', icon: 'fas fa-robot' },
     ],
   },
 ]
 
 export const experience = [
   {
-    role: 'Computer Science Researcher',
+    role: 'AI Researcher',
     company: 'Texas State University',
-    period: 'June 2024 – September 2024',
+    period: 'June 2025 – September 2025',
     bullets: [
-      'Conducted a comparative analysis report on AI models through literature and hands-on testing, evaluating their strengths, limitations, and task-specific performance, resulting in optimal selection of models for 15 departments',
-      'Presented the findings to the board of Vice-President for IT, delivering technical analysis in a simple understandable format, directly influencing 120+ employee members of the university',
+      'Benchmarked 10+ LLMs (GPT-4, Claude, Llama, Gemini) using Python to automate prompt-based evaluations',
+      'Built an evaluation pipeline using OpenAI and Anthropic APIs to test outputs against 8+ rubrics',
+      'Developed a weighted scoring framework in Python and Pandas to rank AI models by department-specific use cases',
     ],
   },
   {
     role: 'Software Engineer Intern',
     company: 'Orgware Construct Software Development',
-    period: 'April 2023 – July 2023',
+    period: 'June 2024 – August 2024',
     bullets: [
-      'Built promotional and discount system features using React.js and Node.js with Express, implementing pricing logic and UI components that contributed to a 20% increase in subscriptions',
-      'Architected RESTful APIs to handle user authentication and data validation, integrating with Firebase Authentication services to deliver secure login/logout functionality supporting 1,000+ users',
-      'Designed and managed MySQL databases with 5+ tables, writing optimized SQL queries to efficiently fetch user data and support promotional features',
+      'Engineered discount systems in Node.js/Express with validation logic for percentage-off, flat discounts, and expiry rules, integrating real-time discount previews on the React.js storefront, driving 20% subscription growth',
+      'Architected RESTful APIs with Firebase Authentication, implementing Express middleware for JWT token verification, role-based access control, and input sanitization, securing endpoints serving 1000+ active users',
+      'Wrote unit tests using Jest for coupon validation and API endpoints, achieving 80%+ code coverage across core modules',
     ],
   },
   {
-    role: 'Software Engineer Intern',
+    role: 'Software Developer Intern',
     company: 'Global Hub Education Network',
-    period: 'January 2023 – March 2023',
+    period: 'May 2023 – August 2023',
     bullets: [
-      'Contributed to the development of web application features using React.js under senior developer mentorship',
-      'Implemented a dynamic React component for the company testimonials section, adding 3 new reviews with responsive card layouts and hover animations',
-      'Gained hands-on experience with the software development life cycle, contributing across design and testing phases',
+      'Developed 5+ reusable React components with responsive layouts and deployed across 3 production pages',
+      'Built testimonial system connecting React to MySQL via REST APIs, enabling CRUD management for 500+ visitors',
+      'Shipped 10+ pull requests via Git branching and code reviews, maintaining 0 merge conflicts across 3-month sprint cycle',
     ],
   },
 ]
@@ -138,12 +150,14 @@ export const about = {
     'Software Engineering in JavaScript',
     'Computing Systems Fundamentals',
     'Internet Software Development (MERN)',
+    'Machine Learning (Python)',
   ],
   achievements: [
     "President's List Recognition",
     "Dean's List Recognition",
     'Texas State Achievement Scholarship',
     'Best Student Employee Award',
+    'Computer Science Excellence Award',
   ],
   involvement: [
     'IEEE TXST',
@@ -152,5 +166,6 @@ export const about = {
     'Bobcat Build Student Organization',
     'Google Developers Group',
     'Technical Interview Prep at TXST',
+    'Honors College (Coordinator)',
   ],
 }
