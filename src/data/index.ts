@@ -145,6 +145,7 @@ export const experience = [
 
 export const hobbies = [
   { label: 'Fitness', emoji: '🏋️' },
+  { label: 'Nutrition', emoji: '🥦' },
   { label: 'Boxing', emoji: '🥊' },
   { label: 'Soccer', emoji: '⚽' },
   { label: 'Swimming', emoji: '🏊' },

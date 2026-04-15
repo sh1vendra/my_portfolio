@@ -30,7 +30,7 @@ export default function Hobbies() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.07 }}
-              className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-gray-50 dark:bg-white/[0.04] border border-gray-200 dark:border-white/[0.08] text-gray-600 dark:text-white/65 hover:border-gold-500/50 hover:text-gold-600 dark:hover:text-gold-400 hover:bg-gold-500/5 transition-all duration-200 cursor-default"
+              className="inline-flex items-center gap-1.5 text-sm font-bold px-3 py-1.5 rounded-full bg-gray-50 dark:bg-white/[0.04] border border-gray-200 dark:border-white/[0.08] text-gray-600 dark:text-white/65 hover:border-gold-500/50 hover:text-gold-600 dark:hover:text-gold-400 hover:bg-gold-500/5 transition-all duration-200 cursor-default"
             >
               <span className="text-[13px]">{hobby.emoji}</span>
               {hobby.label}
