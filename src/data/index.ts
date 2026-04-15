@@ -143,6 +143,14 @@ export const experience = [
   },
 ]
 
+export const hobbies = [
+  { label: 'Fitness', emoji: '🏋️' },
+  { label: 'Boxing', emoji: '🥊' },
+  { label: 'Soccer', emoji: '⚽' },
+  { label: 'Swimming', emoji: '🏊' },
+  { label: 'Reading Books', emoji: '📚' },
+]
+
 export const about = {
   coursework: [
     'Data Structures & Algorithms in C++',
