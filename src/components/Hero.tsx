@@ -91,6 +91,13 @@ export default function Hero() {
             >
               Building software that solves real problems.
             </motion.p>
+
+            <motion.p
+              variants={item}
+              className="text-base italic text-gray-400 dark:text-white/30"
+            >
+              💻 I write code. Coffee writes me. ☕
+            </motion.p>
           </motion.div>
 
           {/* Portrait */}
