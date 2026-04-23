@@ -159,6 +159,7 @@ export const hobbies = [
   { label: 'Soccer', emoji: '⚽' },
   { label: 'Swimming', emoji: '🏊' },
   { label: 'Reading Books', emoji: '📚' },
+  { label: 'Meditation', emoji: '🧘' },
 ]
 
 export const about = {
