@@ -9,7 +9,7 @@ export const projects = [
     alt: 'Ask OTSL chat interface',
   },
   {
-    name: 'Sortify for Students',
+    name: 'Sortify — AI Document Organizer',
     description:
       'AI-powered document organization and retrieval platform. Automatically categorizes academic files and enables semantic search through a RAG pipeline with an AI chat assistant.',
     tags: ['React', 'TypeScript', 'Vite', 'TailwindCSS', 'FastAPI', 'PostgreSQL', 'PGVector', 'Sentence Transformers'],
