@@ -1,5 +1,14 @@
 export const projects = [
   {
+    name: 'Ask OTSL — AI Assistant',
+    description:
+      'Production-ready RAG chatbot that answers natural language questions about On-Target Supplies & Logistics, grounded in their public website content with source citations. Built a full RAG pipeline from scratch — scraping, chunking, embedding with Gemini, and storing in ChromaDB. Exposes a FastAPI REST API with a branded chat UI featuring light/dark mode and suggested questions.',
+    tags: ['Python', 'FastAPI', 'LangChain', 'Gemini', 'ChromaDB', 'BeautifulSoup', 'RAG'],
+    github: 'https://github.com/sh1vendra/OTSL_RAG',
+    screenshot: '/assets/projects/otsl_rag.png',
+    alt: 'Ask OTSL chat interface',
+  },
+  {
     name: 'Sortify for Students',
     description:
       'AI-powered document organization and retrieval platform. Automatically categorizes academic files and enables semantic search through a RAG pipeline with an AI chat assistant.',
