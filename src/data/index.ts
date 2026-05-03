@@ -36,6 +36,15 @@ export const projects = [
     alt: 'Arcade Tic-Tac-Toe game interface',
   },
   {
+    name: 'GTM Content Agent',
+    description:
+      'An AI-powered GTM content generation agent built on Cloudflare\'s edge infrastructure. Automates case study writing, sales enablement briefs, and event messaging for B2B tech teams. Features a chat interface where the agent asks clarifying questions and generates structured, metric-driven content instantly. Persistent conversation state via Durable Objects maintains full session context across turns.',
+    tags: ['TypeScript', 'Cloudflare Workers', 'Workers AI', 'Durable Objects', 'Cloudflare Agents SDK', 'Llama 3.3 70B', 'Vite'],
+    github: 'https://github.com/sh1vendra/cf_ai_gtm_agent',
+    screenshot: '/assets/projects/gtm_agent.png',
+    alt: 'GTM Content Agent chat interface',
+  },
+  {
     name: 'Weather App',
     description:
       'Real-time weather application with 5-day forecast, geolocation detection, detailed metrics (humidity, wind, pressure, sunrise/sunset), and dynamic backgrounds matching current conditions.',
