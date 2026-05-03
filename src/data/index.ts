@@ -177,6 +177,7 @@ export const about = {
     'Texas State Achievement Scholarship',
     'Best Student Employee Award',
     'Computer Science Excellence Award',
+    'Hackathon Winner',
   ],
   involvement: [
     'IEEE TXST',
