@@ -1,5 +1,14 @@
 export const projects = [
   {
+    name: 'FAANG Prep AI',
+    description:
+      'A real-time AI mock interview platform simulating the full FAANG interview experience. Features a voice AI interviewer powered by Gemini Live API, a photorealistic animated avatar with real-time lip-sync, a live Monaco code editor that syncs code to the AI continuously, and a post-interview feedback engine scoring communication, code quality, and engagement with a hire or no-hire decision.',
+    tags: ['Next.js', 'TypeScript', 'Python', 'FastAPI', 'Gemini Live API', 'Firebase', 'Monaco Editor'],
+    github: 'https://github.com/sh1vendra/Interview_Prep',
+    screenshot: '/assets/projects/faang_prep.png',
+    alt: 'FAANG Prep AI mock interview platform',
+  },
+  {
     name: 'Sortify — AI Document Organizer',
     description:
       'AI-powered document organization and retrieval platform. Automatically categorizes academic files and enables semantic search through a RAG pipeline with an AI chat assistant.',
