@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface NavbarProps {
   theme: 'dark' | 'light'
@@ -19,39 +19,55 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false)
   const [active, setActive] = useState('#hero')
   const [mobileOpen, setMobileOpen] = useState(false)
+  const lockRef = useRef(false)
+  const lockTimer = useRef<number | null>(null)
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20)
-      const atBottom =
-        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
-      if (atBottom) setActive('#contact')
+      if (lockRef.current) return
+      const sections = Array.from(document.querySelectorAll<HTMLElement>('section[id]'))
+      if (!sections.length) return
+
+      const center = window.scrollY + window.innerHeight / 2
+      let bestId = sections[0].id
+      let bestDist = Infinity
+      for (const s of sections) {
+        const sCenter = s.offsetTop + s.offsetHeight / 2
+        const dist = Math.abs(center - sCenter)
+        if (dist < bestDist) {
+          bestDist = dist
+          bestId = s.id
+        }
+      }
+      setActive(`#${bestId}`)
     }
+    onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('section[id]')
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) setActive(`#${e.target.id}`)
-        })
-      },
-      { rootMargin: '-40% 0px -55% 0px' },
-    )
-    sections.forEach((s) => observer.observe(s))
-    return () => observer.disconnect()
-  }, [])
+  const lockActive = (href: string) => {
+    setActive(href)
+    lockRef.current = true
+    if (lockTimer.current) window.clearTimeout(lockTimer.current)
+    lockTimer.current = window.setTimeout(() => {
+      lockRef.current = false
+    }, 900)
+  }
 
   const closeMobile = () => setMobileOpen(false)
+
+  const onSectionClick = (href: string) => {
+    lockActive(href)
+    closeMobile()
+  }
 
   const goHome = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     window.scrollTo({ top: 0, behavior: 'smooth' })
     history.replaceState(null, '', window.location.pathname)
-    setActive('#hero')
+    lockActive('#hero')
     closeMobile()
   }
 
@@ -78,7 +94,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             <li key={link.href}>
               <a
                 href={link.href}
-                onClick={link.href === '#hero' ? goHome : undefined}
+                onClick={link.href === '#hero' ? goHome : () => onSectionClick(link.href)}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 ${
                   active === link.href
                     ? 'text-gold-600 dark:text-gold-500 bg-gold-500/10'
@@ -118,7 +134,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             <a
               key={link.href}
               href={link.href}
-              onClick={link.href === '#hero' ? goHome : closeMobile}
+              onClick={link.href === '#hero' ? goHome : () => onSectionClick(link.href)}
               className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                 active === link.href
                   ? 'text-gold-600 dark:text-gold-500 bg-gold-500/10'

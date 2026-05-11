@@ -24,7 +24,6 @@ export default function Hero() {
         'Full-Stack Software Developer',
         'Intel Ambassador',
         'AI Agents & Systems',
-        'Computer Science @ Texas State University',
       ],
       typeSpeed: 40,
       backSpeed: 28,
@@ -81,7 +80,10 @@ export default function Hero() {
             </motion.div>
 
             <motion.p variants={item} className="text-base text-gray-500 dark:text-white/45 mb-1.5">
-              B.S. Computer Science &nbsp;&middot;&nbsp; Minor: Applied Mathematics
+              Major: B.S. Computer Science, Minor: Applied Mathematics
+            </motion.p>
+            <motion.p variants={item} className="text-base text-gray-500 dark:text-white/45 mb-1.5">
+              Honors College, Texas State University
             </motion.p>
             <motion.p variants={item} className="text-base font-semibold text-gray-700 dark:text-white/75 mb-3">
               GPA: 4.0 CS Major / 3.92 Overall
@@ -98,7 +100,7 @@ export default function Hero() {
               variants={item}
               className="text-base italic text-gray-400 dark:text-white/30"
             >
-              💻 I write code. Coffee writes me. ☕
+              I write code. Coffee writes me. ☕
             </motion.p>
           </motion.div>
 
