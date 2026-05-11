@@ -21,8 +21,9 @@ export default function Hero() {
   useEffect(() => {
     const typed = new Typed(typedRef.current!, {
       strings: [
-        'Full-Stack Developer',
+        'Full-Stack Software Developer',
         'Intel Ambassador',
+        'AI Agents & Systems',
         'Computer Science @ Texas State University',
       ],
       typeSpeed: 40,
@@ -30,6 +31,7 @@ export default function Hero() {
       backDelay: 2200,
       loop: true,
       smartBackspace: true,
+      contentType: null as unknown as string,
     })
     return () => typed.destroy()
   }, [])
@@ -82,7 +84,7 @@ export default function Hero() {
               B.S. Computer Science &nbsp;&middot;&nbsp; Minor: Applied Mathematics
             </motion.p>
             <motion.p variants={item} className="text-base font-semibold text-gray-700 dark:text-white/75 mb-3">
-              GPA: 3.92
+              GPA: 4.0 CS Major / 3.92 Overall
             </motion.p>
 
             <motion.p

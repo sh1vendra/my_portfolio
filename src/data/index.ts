@@ -173,12 +173,17 @@ export const hobbies = [
 
 export const about = {
   coursework: [
-    'Data Structures & Algorithms in C++',
-    'Object-Oriented Programming in Java',
-    'Software Engineering in JavaScript',
-    'Computing Systems Fundamentals',
-    'Internet Software Development (MERN)',
-    'Machine Learning (Python)',
+    'Data Structures & Algorithms (C++) - "A"',
+    'Object-Oriented Programming (Java) - "A"',
+    'Software Engineering (JavaScript & Python) - "A"',
+    'Software Development (MERN) - "A"',
+    'Machine Learning (Python) - "A"',
+    'Computer Ethics - "A"',
+    'Discrete Mathematics I - "A"',
+    'Discrete Mathematics II - "A"',
+    'Calculus I - "A"',
+    'Calculus II - "A"',
+    'Calculus III - "A"',
   ],
   achievements: [
     "President's List Recognition",

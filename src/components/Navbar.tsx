@@ -21,7 +21,12 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20)
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+      if (atBottom) setActive('#contact')
+    }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -42,6 +47,14 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
 
   const closeMobile = () => setMobileOpen(false)
 
+  const goHome = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    history.replaceState(null, '', window.location.pathname)
+    setActive('#hero')
+    closeMobile()
+  }
+
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -52,7 +65,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
     >
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center gap-6">
         <a
-          href="#hero"
+          href="https://shivendrabhagat.com"
           className="font-extrabold text-4xl text-gray-900 dark:text-white mr-auto hover:text-gold-600 dark:hover:text-gold-500 transition-colors"
           style={{ fontFamily: "'Dancing Script', 'Brush Script MT', cursive" }}
         >
@@ -65,6 +78,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             <li key={link.href}>
               <a
                 href={link.href}
+                onClick={link.href === '#hero' ? goHome : undefined}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 ${
                   active === link.href
                     ? 'text-gold-600 dark:text-gold-500 bg-gold-500/10'
@@ -104,7 +118,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             <a
               key={link.href}
               href={link.href}
-              onClick={closeMobile}
+              onClick={link.href === '#hero' ? goHome : closeMobile}
               className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                 active === link.href
                   ? 'text-gold-600 dark:text-gold-500 bg-gold-500/10'

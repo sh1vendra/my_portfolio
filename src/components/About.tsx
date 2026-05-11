@@ -4,8 +4,9 @@ import { about } from '../data'
 const cards = [
   {
     icon: 'fas fa-book-open',
-    title: 'Relevant Coursework',
+    title: 'Courseworks Taken & Grades Earned',
     items: about.coursework,
+    scrollable: true,
   },
   {
     icon: 'fas fa-trophy',
@@ -50,7 +51,7 @@ export default function About() {
                 </div>
                 <h3 className="font-semibold text-sm text-gray-900 dark:text-white">{card.title}</h3>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className={`flex flex-wrap gap-2 ${card.scrollable ? 'max-h-[260px] overflow-y-auto pr-1' : ''}`}>
                 {card.items.map((pill) => (
                   <span
                     key={pill}
