@@ -1,5 +1,14 @@
 export const projects = [
   {
+    name: 'ReelStudio',
+    description:
+      'An autonomous AI pipeline that turns real estate listing photos into fully cinematic, beat-synced videos ready for YouTube, Instagram, and TikTok in under 5 minutes. Built at the AITX x Codex Hackathon in Austin, TX. Three AI agents, ImageAnalyzer, ShotMatcher, and StoryboardBuilder, orchestrate photo classification, narrative storyboard sequencing, and cinematic prompt selection. FAL Kling v1.6 generates video clips per photo, librosa extracts BPM for beat-synced cuts, and FFmpeg assembles the final 1080p MP4.',
+    tags: ['Python', 'FastAPI', 'Next.js', 'TypeScript', 'GPT-4o Vision', 'FAL Kling', 'FFmpeg', 'librosa', 'SQLite', 'Tailwind CSS'],
+    github: 'https://github.com/AITX-codex-hackathon/Reel_Studio',
+    screenshot: '/assets/projects/reelstudio.png',
+    alt: 'ReelStudio AI real estate video generator',
+  },
+  {
     name: 'FAANG Prep AI',
     description:
       'A real-time AI mock interview platform simulating the full FAANG interview experience. Features a voice AI interviewer powered by Gemini Live API, a photorealistic animated avatar with real-time lip-sync, a live Monaco code editor that syncs code to the AI continuously, and a post-interview feedback engine scoring communication, code quality, and engagement with a hire or no-hire decision.',
