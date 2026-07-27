@@ -158,7 +158,7 @@ export const experience = [
   {
     role: 'AI Researcher',
     company: 'Texas State University',
-    period: 'June 2025 – September 2025',
+    period: 'June 2026 – August 2026',
     bullets: [
       'Benchmarked 10+ LLMs (GPT-4, Claude, Llama, Gemini) using Python to automate prompt-based evaluations',
       'Built an evaluation pipeline using OpenAI and Anthropic APIs to test outputs against 8+ rubrics',
@@ -168,7 +168,7 @@ export const experience = [
   {
     role: 'Software Engineer Intern',
     company: 'Orgware Construct Software Development',
-    period: 'June 2024 – August 2024',
+    period: 'June 2025 – August 2025',
     bullets: [
       'Engineered discount systems in Node.js/Express with validation logic for percentage-off, flat discounts, and expiry rules, integrating real-time discount previews on the React.js storefront, driving 20% subscription growth',
       'Architected RESTful APIs with Firebase Authentication, implementing Express middleware for JWT token verification, role-based access control, and input sanitization, securing endpoints serving 1000+ active users',

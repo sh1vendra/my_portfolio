@@ -86,7 +86,7 @@ export default function Hero() {
               Honors College, Texas State University
             </motion.p>
             <motion.p variants={item} className="text-base font-semibold text-gray-700 dark:text-white/75 mb-3">
-              GPA: 4.0 CS Major / 3.92 Overall
+              GPA: 4.0 CS Major / 3.90 Overall
             </motion.p>
 
             <motion.p
